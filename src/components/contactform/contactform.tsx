@@ -6,13 +6,19 @@ import styles from './contactform.module.css';
 import Contact from '@/assets/contact.png';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+type ContactFormData = {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+};
 
 export default function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const {  handleSubmit, reset } = useForm();
+  const {  handleSubmit, reset } = useForm<ContactFormData>();
 
-  const onSubmit = async (data: any) => {
+  const onSubmit = async (data: ContactFormData) => {
    try{ setIsSubmitting(true);
     const payload = {
       access_key: 'e1742f48-58ce-4f0a-a5bd-e463cc75b7f0',
