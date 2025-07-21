@@ -1,0 +1,165 @@
+.contactSection {
+  padding: 3rem 1rem;
+  background-color: #0D1E1E;
+  color: white;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+.left {
+  flex: 1 1 45%;
+  background-image: url('/your-image-path.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 400px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(15, 31, 29, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.overlay h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.top {
+   display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 2rem;
+}
+
+.top h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.top p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.form {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.field label span {
+  font-size: 0.875rem;
+  color: #ccc;
+}
+
+.textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem 0;
+  color: white;
+  font-size: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+}
+
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.submitBtn {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #a2af9c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #8f9c89;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+  }
+
+ 
+
+  .overlay h2 {
+    font-size: 1.5rem;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+}
+
+/* ✅ Correct */
+.form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  background-color: #0d1c1b;
+  color: white;
+}
+
+
+.header{
+font-family: 'Instrument Serif', serif;
+  font-size: 48px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.header2{
+font-family: 'Castoro', serif;
+  font-size: 48px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.subheader {
+ font-family: 'Inter', serif;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}

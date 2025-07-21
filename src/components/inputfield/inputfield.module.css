@@ -1,0 +1,43 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  color: #fefefe;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.subLabel {
+  color: rgba(254, 254, 254, 0.6);
+  font-weight: 400;
+}
+
+.input,
+.textarea {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  padding: 0.5rem 0;
+  border: none;
+  border-bottom: 1px solid rgba(254, 254, 254, 0.6);
+  background: transparent;
+  color: #fefefe;
+  outline: none;
+  resize: none;
+}
+.textarea{
+    height: 100px;
+}
+.input::placeholder,
+.textarea::placeholder {
+  color: rgba(254, 254, 254, 0.4);
+}
+
+.input:focus,
+.textarea:focus {
+  border-bottom: 1px solid #fefefe;
+}

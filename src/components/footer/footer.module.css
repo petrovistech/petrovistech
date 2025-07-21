@@ -1,0 +1,111 @@
+.footer {
+  background-color: #0D1E1E;
+  color: white;
+  padding: 5%;
+}
+
+.whiteContainer {
+  background-color: white;
+  color: #0D1E1E;
+  padding: 12% 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.leftSection {
+  flex: 1 1 ;
+  width: 30%;
+}
+
+.brand {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: 'Carter One', cursive;
+  margin: 0 0 0.5rem;
+}
+
+.tagline {
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.linksSection {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.linksHeader {
+  font-size: 28px;
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.link {
+  background: none;
+  border: none;
+  color: #0D1E1E;
+  font-size: 18px;
+   font-family: 'Instrument Sans', sans-serif;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.topButton {
+  margin-left: auto;
+  align-self: flex-start;
+}
+
+.topButton button {
+  background: white;
+  border: 2px solid #0D1E1E;
+  border-radius: 100%;
+  padding: 0.4rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.topButton button:hover {
+  transform: scale(1.1);
+}
+
+.greenPart {
+  color: white;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .leftSection {
+  flex: 1 1 50%;
+  width: 100%;
+}
+
+
+.brand {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: 'Carter One', cursive;
+  margin: 0 0 0.5rem;
+}
+
+.tagline {
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+}

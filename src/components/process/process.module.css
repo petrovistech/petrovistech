@@ -1,0 +1,65 @@
+.processSection {
+  background-color: white;
+  padding: 80px 24px;
+}
+
+.container {
+  margin: 0 auto;
+  margin-left: 5%;
+    margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.title {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: #000;
+  line-height: 48px;
+  word-wrap: break-word;
+  white-space: normal; /* Ensure wrapping */
+}
+
+.description {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 48px;
+}
+@media (max-width: 768px) {
+ .row {
+  display: grid;
+  grid-template-columns:  1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.title {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: #000;
+  line-height: 48px;
+  word-wrap: break-word;
+  white-space: normal; /* Ensure wrapping */
+}
+
+.description {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 36px;
+}
+    
+}
