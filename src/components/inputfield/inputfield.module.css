@@ -17,7 +17,17 @@
   font-weight: 400;
 }
 
-.input,
+.input{
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  padding: 0.5rem 0;
+  border: none;
+  border-bottom: 1px solid rgba(254, 254, 254, 0.6);
+  background: transparent;
+  color: #fefefe;
+  outline: none;
+  resize: none;
+}
 .textarea {
   font-family: 'Inter', sans-serif;
   font-size: 18px;
@@ -32,12 +42,17 @@
 .textarea{
     height: 100px;
 }
-.input::placeholder,
+.input::placeholder {
+  color: rgba(254, 254, 254, 0.4);
+}
+
 .textarea::placeholder {
   color: rgba(254, 254, 254, 0.4);
 }
 
-.input:focus,
+.input:focus{
+  border-bottom: 1px solid #fefefe;
+}
 .textarea:focus {
   border-bottom: 1px solid #fefefe;
 }

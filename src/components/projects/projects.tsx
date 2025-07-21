@@ -41,7 +41,7 @@ const ProjectsSection = () => {
     <section className={styles.projectsSection} id='projects'>
       <div className={styles.leftPanel}>
         <div className={styles.imageContainer}>
-          <Image src={Pro} alt="Project image" fill className={styles.image} />
+          <Image src={Pro.src} alt="Project image" fill className={styles.image} />
           <div className={styles.overlay}>
             <h2 className={styles.overlayTitle}>Our Projects</h2>
             <h3 className={styles.projectsSubtitle}>
@@ -70,7 +70,7 @@ const ProjectsSection = () => {
             </div>
           <div className={styles.carouselImageWrapper}>
             <Image
-              src={carouselData[activeIndex].image}
+              src={carouselData[activeIndex].image.src}
               alt="Project"
               className={styles.carouselImage}
             />

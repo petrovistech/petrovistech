@@ -89,8 +89,8 @@
   font-size: 1rem;
 }
 
-input::placeholder,
-textarea::placeholder {
+.input::placeholder,
+.textarea::placeholder {
   color: #888;
 }
 

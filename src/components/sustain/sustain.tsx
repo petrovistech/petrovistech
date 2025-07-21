@@ -36,19 +36,19 @@ aligns with environmental goals while benefiting the local
 community. </p>
     <div className={styles.iconRow}>
             <div className={styles.iconItem}>
-              <Image src={ZeroWaste} alt="Zero Waste" />
+              <Image src={ZeroWaste.src} alt="Zero Waste" />
               <span>Zero-Waste Processing</span>
             </div>
             <div className={styles.iconItem}>
-              <Image src={LocalAgri} alt="Local Agriculture" />
+              <Image src={LocalAgri.src} alt="Local Agriculture" />
               <span>Local Agricultural Integration</span>
             </div>
             <div className={styles.iconItem}>
-              <Image src={Carbon} alt="Lower Carbon" />
+              <Image src={Carbon.src} alt="Lower Carbon" />
               <span>Reduced Carbon Footprint</span>
             </div>
             <div className={styles.iconItem}>
-              <Image src={Ethanol} alt="Clean Ethanol" />
+              <Image src={Ethanol.src} alt="Clean Ethanol" />
               <span>No Water Footprint in Ethanol 
 Production</span>
             </div>
