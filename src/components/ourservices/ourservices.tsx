@@ -1,12 +1,10 @@
 // components/AboutSection.tsx
-import Image from 'next/image';
 import styles from './ourservices.module.css';
 import CheckCircle from '@/assets/check.svg';
 
 
 export default function OurServices() {
 
-console.log(CheckCircle); 
   return (
     <section className={styles.aboutSection} id='services'>
       <div className={styles.top}>
@@ -34,15 +32,18 @@ undertake.</p>
     <h3 className={styles.serviceTitle}>Turnkey Ethanol Factory Setup</h3>
     <ul className={styles.serviceList}>
       <li className={styles.serviceItem}>
-       <Image src={CheckCircle.src} alt="Check" width={32} height={32} />
+       
+<CheckCircle className={styles.serviceItemIcon} />
         <span className={styles.content}>We manage all aspects of building ethanol production facilities.</span>
       </li>
       <li className={styles.serviceItem}>
-        <Image src={CheckCircle.src} alt="Check" width={32} height={32} />
+        
+<CheckCircle className={styles.serviceItemIcon} />
         <span className={styles.content}>Our services include selecting suitable locations for the facilities.</span>
       </li>
       <li className={styles.serviceItem}>
-        <Image src={CheckCircle.src} alt="Check" width={32} height={32} />
+        
+<CheckCircle className={styles.serviceItemIcon} />
         <span className={styles.content}>We focus on integrating the necessary technologies into the production process.</span>
       </li>
     </ul>
@@ -52,15 +53,18 @@ undertake.</p>
     <h3 className={styles.serviceTitle}>Project Design and Development</h3>
     <ul className={styles.serviceList}>
       <li className={styles.serviceItem}>
-        <Image src={CheckCircle.src} alt="Check" width={32} height={32} />
+        
+<CheckCircle className={styles.serviceItemIcon} />
         <span className={styles.content}>We create projects specifically designed to meet the unique needs of different regions.</span>
       </li>
       <li className={styles.serviceItem}>
-        <Image src={CheckCircle.src} alt="Check" width={32} height={32} />
+        
+<CheckCircle className={styles.serviceItemIcon} />
         <span className={styles.content}>Our approach emphasizes utilizing local agricultural inputs.</span>
       </li>
       <li className={styles.serviceItem}>
-        <Image src={CheckCircle.src} alt="Check" width={32} height={32} />
+        
+<CheckCircle className={styles.serviceItemIcon} />
         <span className={styles.content}>We adapt our projects to fit the specific resources available in each area we serve.</span>
       </li>
     </ul>
@@ -70,15 +74,18 @@ undertake.</p>
     <h3 className={styles.serviceTitle}>Compliance and Sustainability</h3>
     <ul className={styles.serviceList}>
       <li className={styles.serviceItem}>
-        <Image src={CheckCircle.src} alt="Check" width={32} height={32} />
+        
+<CheckCircle className={styles.serviceItemIcon} />
         <span className={styles.content}>All projects are designed to meet local and international environmental standards.</span>
       </li>
       <li className={styles.serviceItem}>
-        <Image src={CheckCircle.src} alt="Check" width={32} height={32} />
+        
+<CheckCircle className={styles.serviceItemIcon} />
         <span className={styles.content}>We implement processes aimed at achieving zero waste.</span>
       </li>
       <li className={styles.serviceItem}>
-        <Image src={CheckCircle.src} alt="Check" width={32} height={32} />
+        
+<CheckCircle className={styles.serviceItemIcon} />
         <span className={styles.content}>Our projects focus on reducing emissions to the lowest possible levels.</span>
       </li>
     </ul>

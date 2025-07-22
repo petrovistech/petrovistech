@@ -1,5 +1,4 @@
 // components/AboutSection.tsx
-import Image from 'next/image';
 import styles from './sustain.module.css';
 import ZeroWaste from '@/assets/zero-waste.svg';
 import LocalAgri from '@/assets/local-agri.svg';
@@ -36,19 +35,19 @@ aligns with environmental goals while benefiting the local
 community. </p>
     <div className={styles.iconRow}>
             <div className={styles.iconItem}>
-              <Image src={ZeroWaste.src} alt="Zero Waste" />
+              <ZeroWaste className={styles.iconItemImg} />
               <span>Zero-Waste Processing</span>
             </div>
             <div className={styles.iconItem}>
-              <Image src={LocalAgri.src} alt="Local Agriculture" />
+              <LocalAgri className={styles.iconItemImg}/>
               <span>Local Agricultural Integration</span>
             </div>
             <div className={styles.iconItem}>
-              <Image src={Carbon.src} alt="Lower Carbon" />
+              <Carbon className={styles.iconItemImg}/>
               <span>Reduced Carbon Footprint</span>
             </div>
             <div className={styles.iconItem}>
-              <Image src={Ethanol.src} alt="Clean Ethanol" />
+              <Ethanol className={styles.iconItemImg}/>
               <span>No Water Footprint in Ethanol 
 Production</span>
             </div>

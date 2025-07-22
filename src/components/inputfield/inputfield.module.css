@@ -17,17 +17,12 @@
   font-weight: 400;
 }
 
-.input{
-  font-family: 'Inter', sans-serif;
-  font-size: 18px;
-  padding: 0.5rem 0;
-  border: none;
-  border-bottom: 1px solid rgba(254, 254, 254, 0.6);
-  background: transparent;
-  color: #fefefe;
-  outline: none;
-  resize: none;
+.required {
+  color: #ff6b6b;
+  margin-left: 4px;
 }
+
+.input,
 .textarea {
   font-family: 'Inter', sans-serif;
   font-size: 18px;
@@ -39,20 +34,27 @@
   outline: none;
   resize: none;
 }
-.textarea{
-    height: 100px;
-}
-.input::placeholder {
-  color: rgba(254, 254, 254, 0.4);
-}
 
+.input::placeholder,
 .textarea::placeholder {
   color: rgba(254, 254, 254, 0.4);
 }
 
-.input:focus{
-  border-bottom: 1px solid #fefefe;
+.textarea {
+  height: 100px;
 }
+
+.input:focus,
 .textarea:focus {
   border-bottom: 1px solid #fefefe;
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.errorBorder {
+  border-bottom: 1px solid #ff6b6b !important;
 }

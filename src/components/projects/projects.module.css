@@ -112,8 +112,14 @@
 
 .carouselImage {
   width: 100%;
+  height: 300px;
   border-radius: 12px;
-  object-fit: cover;
+}
+.carouselImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
 }
 
 .carouselControls {

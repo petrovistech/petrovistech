@@ -71,7 +71,8 @@ const ProjectsSection = () => {
           <div className={styles.carouselImageWrapper}>
             <Image
               src={carouselData[activeIndex].image.src}
-              alt="Project"
+              alt="Project" 
+              fill
               className={styles.carouselImage}
             />
           </div>

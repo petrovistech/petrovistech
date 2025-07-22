@@ -73,16 +73,15 @@
   text-align: center;
 }
 
-.iconItem img {
+.iconItemImg {
   width: 48px;
   height: 48px;
-  object-fit: contain;
   margin-right: 20px;
 }
 
 .iconItem span {
   font-family: 'Inter', sans-serif;
-  font-size: 28px;
+  font-size: 20px;
   text-align: left;
   color: #000;
 }
@@ -142,7 +141,7 @@
 }
 
 .col1 {
-  flex: 0 0 24%;
+  flex: 0 0 38%;
 }
 
 .heading {
@@ -157,7 +156,7 @@
 }
 
 .col2 {
-  flex: 0 0 26%;
+  flex: 0 0 46%;
 }
 
 .lead {
@@ -169,7 +168,7 @@
 }
 
 .col3 {
-  flex: 0 0 40%;
+  flex: 0 0 80%;
 }
 
 .desc {
@@ -209,16 +208,16 @@
   color: #0B1E21;
 }
 
-.iconItem img {
-  width: 32px;
-  height: 32px;
+.iconItemImg {
+  width: 36px;
+  height: 36px;
   object-fit: contain;
   margin-right: 20px;
 }
 
 .iconItem span {
   font-family: 'Inter', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
   color: #000;
 }

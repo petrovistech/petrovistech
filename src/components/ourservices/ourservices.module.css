@@ -13,13 +13,13 @@
 }
 
 .col1 {
-  flex: 0 0 24%;
+  flex: 0 0 40%;
 }
 
 .heading {
   width: 90%;
   font-family: 'Instrument Sans', sans-serif;
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 500;
   color: black;
   border-bottom: 1px solid black;
@@ -28,19 +28,19 @@
 }
 
 .col2 {
-  flex: 0 0 30%;
+  flex: 0 0 50%;
 }
 
 .lead {
-  font-size: 40px;
+  font-size: 26px;
   font-weight: 400;
-  line-height: 52px;
+  line-height: 42px;
   font-family: 'Instrument Sans', sans-serif;
   color: black;
 }
 
 .col3 {
-  flex: 0 0 40%;
+  flex: 0 0 80%;
 }
 
 .desc {
@@ -88,8 +88,8 @@
 
 .serviceItemIcon {
   flex-shrink: 0;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   color: white;
 }
 .content{

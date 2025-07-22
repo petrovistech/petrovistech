@@ -1,51 +1,54 @@
 'use client';
 
+import { UseFormRegisterReturn } from 'react-hook-form';
 import styles from './inputfield.module.css';
 
 interface InputFieldProps {
   label: string;
   subLabel?: string;
   placeholder?: string;
-  name?: string;
-  required?: boolean;
   type?: string;
   isTextArea?: boolean;
   maxWords?: number;
+  register: UseFormRegisterReturn;
+  error?: string;
 }
 
 export default function InputField({
   label,
   subLabel,
   placeholder,
-  name,
-  required = false,
   type = 'text',
   isTextArea = false,
   maxWords,
+  register,
+  error,
 }: InputFieldProps) {
   return (
     <div className={styles.field}>
       <label className={styles.label}>
         {label}
         {subLabel && <span className={styles.subLabel}> ({subLabel})</span>}
-        {required && ' *'}
+        <span className={styles.required}> *</span>
       </label>
+
       {isTextArea ? (
-        <textarea 
-            name={name}
-          className={styles.textarea}
+        <textarea
+          {...register}
+          className={`${styles.textarea} ${error ? styles.errorBorder : ''}`}
           placeholder={placeholder}
-          maxLength={maxWords ? maxWords * 6 : undefined} // Approximate max chars
+          maxLength={maxWords ? maxWords * 6 : undefined}
         />
       ) : (
         <input
-          name={name}
-          className={styles.input}
+          {...register}
           type={type}
+          className={`${styles.input} ${error ? styles.errorBorder : ''}`}
           placeholder={placeholder}
-          required={required}
         />
       )}
+
+      {error && <p className={styles.error}>{error}</p>}
     </div>
   );
 }
